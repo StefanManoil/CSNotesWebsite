@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Mrs. Manoil's Notes</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Ms. Manoil's Notes</h3>
+                <strong>CS</strong>
+            </div>
+
+            <ul id="choices" class="list-unstyled components">
+                <li id="choice1" class="active">
+                    <a href="#index2.html">
+                       <i class="fas fa-home"></i>
+                       Home
+                    </a>
+                </li>
+                <li id="choice2">
+                    <a href="#index2.html">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                </li>
+                <li id="choice3">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                       <i class="fas fa-copy"></i>
+                       Notes
+                     </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">ICS2O</a>
+                        </li>
+                        <li>
+                            <a href="#">ICS3U</a>
+                        </li>
+                        <li>
+                            <a href="#">ICS3C</a>
+                        </li>
+                        <li>
+                            <a href="#">ICS4U</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="choice4">
+                    <a href="#ResSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                       <i class="fas fa-question"></i>
+                       Resources
+                    </a>
+                    <ul class="collapse list-unstyled" id="ResSubmenu">
+                        <li>
+                            <a href="#">JAVA</a>
+                        </li>
+                        <li>
+                            <a href="#">Python</a>
+                        </li>
+                        <li>
+                            <a href="#">Processing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="choice5">
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Sample CPTs
+                    </a>
+                </li>
+                <li id="choice6">
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="" class="article">Download...</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar sticky-top navbar-expand-lg ">
+                <div class="container-fluid">
+                  <button type="button" id="sidebarCollapse" class="navbar-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </button>
+                    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#"> Ms. Manoil's CS Notes</a>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="https://www.dpcdsb.org/MARCL"  target="_blank" title="Marcy website" style="color:#55ACEE; font-size: 30px;" class="far fa-hand-pointer py-2 px-3"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://twitter.com/StMarcellinusSS" target="_blank" title="Marcy Twitter" style="color:#55ACEE; font-size: 30px;" class="fab fa-twitter py-2 px-3"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.youtube.com/channel/UCYvrBVLj4JBsAgsWK1vv7ow" title="Marcy Youtube" target="_blank" style="color:#bb0000; font-size: 30px;" class="fab fa-youtube py-2 px-3"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="site-heading text-center text-white d-none d-lg-block">
+              <span class="site-heading-upper text-primary mb-3">Unlock Your Future With Computer Science</span>
+              <span class="site-heading-lower">MARCY CS</span>
+            </h1>
+            <div class="card-deck">
+              <div class="card" style="background-color: rgba(97, 175, 242, 0.8);color:white style="width: 18rem;"">
+                <img class="card-img-top rounded-circle" src="img\manoil.jpg" alt="Ms. Manoil"  style="width:65px;height:85px;">
+                <div class="card-body">
+                   <p class="card-text">This support site has been created for my students and their parents or guardians, but other teachers, particularly Computer Studies teachers, may also find it useful.</p>
+                   <p class="card-test">A few reasons to study Computer Science:</p>
+                   <p class="card-test">The digital age needs computer scientists. Like it or not, you're living in it – this is the Digital Age. Computer programmes have all but infiltrated every aspect of our lives. Computer scientists theorise, design, develop and apply the software and hardware for the programmes we use day in day out – sounds pretty important to us.</p>
+                   <p class="card-test">Computer science students have excellent graduate prospects. They stand a pretty good chance of being professionally employed within six month from graduating a university/college program.</p>
+                   <p class="card-test">Computer scientists earn big bucks. They are in demand and their salaries reflects this.</p>
+                   <p class="card-test">Computer scientists are needed in every type of industry. Every industry uses computers so naturally computer scientists can work in any. Problems in science, engineering, health care, and so many other areas can be solved by computers. It's up to the computer scientist to figure out how, and design the software to apply the solution.</p>
+                </div>
+              </div>
+
+              <div class="card col-sm-4" style="background-color: rgba(97, 175, 242, 0.6);color:white">
+                 <a href="https://twitter.com/StMarcellinusSS" target="_blank" title="Marcy Twitter" style="color:#55ACEE; font-size: 30px;" class="fab fa-twitter py-2 px-3"></a>
+                 <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/StMarcellinusSS?ref_src=twsrc%5Etfw">Tweets by StMarcellinusSS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             </div>
+
+         </div>
+            <section class="page-section">
+            <div class="container">
+              <div class="site-desc">
+                <div class="site-desc-about d-flex">
+                  <div class="bg-faded p-3 d-flex mr-auto rounded">
+                     <p class="mb-0">This support site has been created for my students and their parents or guardians.</p>
+                  </div>
+                </div>
+                <img class="site-desc-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/cs.png" alt="St. Marcellinus S.S.">
+                <div class="site-desc-description d-flex ml-auto">
+                  <div class="bg-faded p-3 rounded">
+                    <p class="mb-0">“Everybody should learn how to program a computer... Because it teaches you how to think."</p>
+                    <p class="mb-0" style="text-align:right">Steve Jobs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                $(this).toggleClass('active');
+            });
+
+        });
+
+        $(function() {
+              $( 'ul.components li' ).on( 'click', function() {
+                console.log("inside")
+                    $( this ).parent().find( 'li.active' ).removeClass( 'active' );
+                    $( this ).addClass( 'active' );
+              });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "user0": {
+    "user_name": "John",
+    "user_lastname": "Doe",
+    "user_user": "user0",
+    "user_password": "aaaa"
+  },
+
+  "user1": {
+    "user_name": "Jane",
+    "user_lastname": "Doe",
+    "user_user": "user1",
+    "user_password": "bbbb"
+  }
+}

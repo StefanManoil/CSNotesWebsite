@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ms. Manoil's Notes</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- <link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css"> -->
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/solid.js" integrity="" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/fontawesome.js" integrity="" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- JS -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+    <script src="js/firebase_utils.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+           <h3>Ms. Manoil's Notes</h3>
+            <strong>CS</strong>
+        </div>
+        <ul id="choices" class="list-unstyled components">
+            <li id="home" class="active">
+                <a href="index.html">
+                   <i class="fas fa-home"></i>
+                   Home
+                </a>
+            </li>
+            <li id="about">
+                <a href="about.html">
+                  <i class="fas fa-briefcase"></i>
+                  About
+                </a>
+            </li>
+            <li id="notes">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <i class="fas fa-copy"></i>
+                   Notes
+               </a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="ICS2O.html">ICS2O</a>
+                    </li>
+                    <li>
+                       <a href="ICS3U.html">ICS3U</a>
+                    </li>
+                    <li>
+                       <a href="ICS3C.html">ICS3C</a>
+                    </li>
+                    <li>
+                       <a href="ICS4U.html">ICS4U</a>
+                    </li>
+              </ul>
+            </li>
+            <li id="resources">
+                <a href="#ResSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <i class="fas fa-question"></i>
+                   Resources
+                </a>
+                <ul class="collapse list-unstyled" id="ResSubmenu">
+                    <li>
+                       <a href="#">JAVA</a>
+                    </li>
+                    <li>
+                       <a href="#">Python</a>
+                    </li>
+                    <li>
+                        <a href="#">Processing</a>
+                    </li>
+                    <li>
+                        <a href="#">Game Maker</a>
+                    </li>
+                    <li>
+                        <a href="#">Coding</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="CPTsamples">
+                <a href="#CPTsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <i class="fas fa-image"></i>
+                   CPT Samples
+                </a>
+                <ul class="collapse list-unstyled" id="CPTsSubmenu">
+                    <li>
+                       <a href="#">JAVA</a>
+                    </li>
+                    <li>
+                       <a href="#">Python</a>
+                    </li>
+                    <li>
+                        <a href="#">Processing</a>
+                    </li>
+                    <li>
+                        <a href="#">Game Maker</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="contests">
+                <a href="#ContestSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                   <i class="fas fa-medal"></i>
+                   Contests
+                </a>
+                <ul class="collapse list-unstyled" id="ContestSubmenu">
+                    <li>
+                       <a href="#">Game Making</a>
+                    </li>
+                    <li>
+                       <a href="#">ECOO</a>
+                    </li>
+                    <li>
+                        <a href="#">Appathon</a>
+                    </li>
+                    <li>
+                        <a href="#">Waterloo</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="contact">
+                <a href="#">
+                  <i class="fas fa-paper-plane"></i>
+                  Contact
+                </a>
+            </li>
+        </ul>
+        <ul class="list-unstyled CTAs">
+            <li>
+              <a href="" class="article">Forms</a>
+            </li>
+        </ul>
+    </nav>
+
+        <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar sticky-top navbar-expand-lg">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+              <div class="navbar-brand text-uppercase text-expanded font-weight-bold d-md-none" href="#"> Ms. Manoil's CS Notes</div>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" id="stickyBarCollapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <i class="fas fa-align-justify"></i> -->
+                  <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto">
+                      <li class="nav-item active">
+                          <a href="https://www.dpcdsb.org/MARCL"  target="_blank" title="Marcy website" style="color:#55ACEE; font-size: 30px;" class="far fa-hand-pointer py-2 px-3"></a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="https://twitter.com/StMarcellinusSS" target="_blank" title="Marcy Twitter" style="color:#55ACEE; font-size: 30px;" class="fab fa-twitter py-2 px-3"></a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="https://www.youtube.com/channel/UCYvrBVLj4JBsAgsWK1vv7ow" title="Marcy Youtube" target="_blank" style="color:#bb0000; font-size: 30px;" class="fab fa-youtube py-2 px-3"></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
+            <div class="site-heading text-center text-white .d-block">
+               <span class="site-heading-upper text-primary mb-3">Unlock Your Future With Computer Science</span>
+               <span class="site-heading-lower">MARCY CS</span>
+            </div>
+            <div class="card-deck mt-1 ml-1 mr-1">
+              <div class="card mr-0 ml-1" style="background-color: rgba(97, 175, 242, 0.9);color:white">
+                <div class="card-body">
+                   <p class="card-text">
+                     <a href="img\manoil.jpg" target="blank">
+                        <img class="rounded-circle pull-left" src="img\manoil.jpg"  alt="Ms. Manoil"  style="width:45px;height:55px;">
+                     </a>
+                        An understanding of computer science is becoming increasingly essential in today’s world. Computers are going to be a big part of our future...and that future is yours to shape.</p>
+                   <p class="card-text"> A few reasons to study Computer Science:</p>
+                   <p class="card-text"><i class="fas fa-caret-right"></i> The digital age needs computer scientists. Like it or not, you're living in it – this is the Digital Age. Computer programmes have all but infiltrated every aspect of our lives. Computer scientists theorise, design, develop and apply the software and hardware for the programmes we use day in day out – sounds pretty important to us.</p>
+                   <p class="card-text"><i class="fas fa-caret-right"></i> Computer science students have excellent graduate prospects. They stand a pretty good chance of being professionally employed within six month from graduating a university/college program.</p>
+                   <p class="card-text"><i class="fas fa-caret-right"></i> Computer scientists earn big bucks. They are in demand and their salaries reflects this.</p>
+                   <p class="card-text"><i class="fas fa-caret-right"></i> Computer scientists are needed in every type of industry. Every industry uses computers so naturally computer scientists can work in any. Problems in science, engineering, health care, and so many other areas can be solved by computers. It's up to the computer scientist to figure out how, and design the software to apply the solution.</p>
+                </div>
+              </div>
+
+              <div class="card ml-0 mr-1 col-sm-4" style="background-color: rgba(97, 175, 242, 0.9);color:white">
+                 <a href="https://twitter.com/StMarcellinusSS" target="_blank" title="Marcy Twitter" style="color:#00004d; font-size: 30px;" class="fab fa-twitter py-2 px-3"></a>
+                 <a class="twitter-timeline" data-height="700" href="https://twitter.com/StMarcellinusSS?ref_src=twsrc%5Etfw">Tweets by StMarcellinusSS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+
+            </div>
+            <section class="page-section cta mt-1 mb-0  ml-2  mr-2">
+              <div class="container">
+                <div class="row  mb-0">
+                  <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                      <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Today</span>
+                        <span class="section-heading-lower">YOU</span>
+                      </h2>
+                      <p class="mb-0">Learn a bit about Computer Science</p>
+                      <p class="mb-0">Give it a try! START CODING!!!</p>
+                      <p class="mb-0">Examine how your interests & skills connect to CS</p>
+                      <p class="mb-0">Explore paths to careers</p>
+                      <p class="mb-0">Consider next steps</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="page-section clearfix mt-1 mb-0">
+              <div class="container">
+                <div class="intro">
+                  <img class="intro-img mb-1 rounded img-fluid" src="img/intro.jpg" alt="St. Marcellinus S.S.">
+                  <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-0">
+                       <span class="section-heading-upper">St. Marcellinus S.S.</span>
+                       <img class="img-thumbnail img-fluid rounded" src="img/logo.png" alt="St. Marcellinus S.S.">
+                       <span class="section-heading-lower" style="color:white">"Let Every Spirit Soar"</span>
+                    </h2>
+                    <!-- <p class="mb-3">"Let Every Spirit Soar"
+                    </p> -->
+                    <a href="https://twitter.com/StMarcellinusSS" target="blank" style="color:#55ACEE; font-size: 30px;" class="fab fa-twitter py-2 px-3"></a>
+                    <a href="https://www.youtube.com/channel/UCYvrBVLj4JBsAgsWK1vv7ow" target="blank" style="color:#bb0000; font-size: 30px;" class="fab fa-youtube py-2 px-3"></a>
+                   <div class="intro-button mx-auto">
+                      <a class="btn btn-primary btn-xl" href="https://www.dpcdsb.org/MARCL" target="blank">Marcy Website</a>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+         <footer class="footer text-faded text-center py-4">
+           <div class="container">
+             <p class="m-0 small">Copyright &copy; Carmen Manoil 2019</p>
+           </div>
+         </footer>
+     </div><!-- class content-->
+  </div><!--wrapper-->
+
+</body>
+
+</html>
